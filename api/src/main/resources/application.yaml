@@ -1,0 +1,11 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.garamohamed.HttpKt.configureHttp
+      - com.garamohamed.SerializationKt.configureSerialization
+      - com.garamohamed.PostgresKt.configurePostgres
+      - com.garamohamed.ExposedKt.configureExposed
+      - com.garamohamed.StatusPagesKt.configureStatusPages
+      - com.garamohamed.RoutingKt.configureRouting
