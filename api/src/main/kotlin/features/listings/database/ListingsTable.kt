@@ -1,4 +1,4 @@
-package com.garamohamed.features.listings
+package com.garamohamed.features.listings.database
 
 
 import org.jetbrains.exposed.v1.core.Table

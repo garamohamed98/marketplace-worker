@@ -1,4 +1,4 @@
-package com.garamohamed.features.listings
+package com.garamohamed.features.listings.dto
 
 import kotlinx.serialization.Serializable
 

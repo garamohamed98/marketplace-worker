@@ -6,12 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="a7aba5db-e0c6-45e4-89ca-657f42ba756d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/features/listings/ListingService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/features/listings/ListingService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/features/listings/ListingRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/features/listings/repository/ListingRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/features/listings/ListingRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/features/listings/repository/ListingRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/features/listings/ListingRequest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/features/listings/dto/ListingRequest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/features/listings/ListingResponse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/features/listings/dto/ListingResponse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/features/listings/ListingRoutes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/features/listings/ListingRoutes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/features/listings/ListingService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/features/listings/service/ListingService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/features/listings/ListingsTable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/features/listings/database/ListingsTable.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/plugins/DatabaseFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/plugins/DatabaseFactory.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/plugins/Routing.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/plugins/Routing.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/marketplaceworker.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/ApplicationKt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/MainKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingRepositoryImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingRequest$$serializer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingRequest$Companion.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingRequest.class" beforeDir="false" />
@@ -21,6 +30,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingRoutesKt$listingRoutes$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingRoutesKt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingsTable.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/DatabaseFactory.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/RoutingKt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/SerializationKt.class" beforeDir="false" />
@@ -33,9 +43,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="package-info" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -70,6 +82,19 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Win.11.Pro.23H2\Desktop\marketplace-worker\api\src\main\kotlin\features\listings\mapper" />
+      <recent name="C:\Users\Win.11.Pro.23H2\Desktop\marketplace-worker\api\src\main\kotlin\features\listings" />
+      <recent name="C:\Users\Win.11.Pro.23H2\Desktop\marketplace-worker\api\src\main\kotlin\features\listings\database" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="features.listings.database" />
+      <recent name="features.listings.dto" />
+      <recent name="features.listings.service" />
+      <recent name="features.listings.repository" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.garamohamed.MainKt" />

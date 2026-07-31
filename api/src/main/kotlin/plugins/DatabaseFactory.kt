@@ -1,6 +1,6 @@
 package com.garamohamed.plugins
 
-import com.garamohamed.features.listings.ListingsTable
+import com.garamohamed.features.listings.database.ListingsTable
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import io.ktor.server.application.ApplicationEnvironment
