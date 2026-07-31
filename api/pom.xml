@@ -11,10 +11,10 @@
         <exposed_version>1.3.0</exposed_version>
         <h2_version>2.4.240</h2_version>
         <h2-r2dbc_version>1.1.0.RELEASE</h2-r2dbc_version>
-        <kotlin_version>2.4.0</kotlin_version>
+        <kotlin_version>2.2.20</kotlin_version>
         <logback_version>1.5.35</logback_version>
         <postgresql_version>42.7.11</postgresql_version>
-        
+        <main.class>com.garamohamed.MainKt</main.class>
     </properties>
     <dependencies>
         <dependency>
@@ -63,21 +63,6 @@
             <version>${exposed_version}</version>
         </dependency>
         <dependency>
-            <groupId>org.jetbrains.exposed</groupId>
-            <artifactId>exposed-r2dbc</artifactId>
-            <version>${exposed_version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>${h2_version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.r2dbc</groupId>
-            <artifactId>r2dbc-h2</artifactId>
-            <version>${h2-r2dbc_version}</version>
-        </dependency>
-        <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback_version}</version>
@@ -105,6 +90,21 @@
             <version>3.5.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlinx</groupId>
+            <artifactId>kotlinx-serialization-json</artifactId>
+            <version>1.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.exposed</groupId>
+            <artifactId>exposed-jdbc</artifactId>
+            <version>${exposed_version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>6.3.0</version>
+        </dependency>
     </dependencies>
     <build>
         <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
@@ -121,7 +121,17 @@
                 <version>${kotlin_version}</version>
                 <configuration>
                     <jvmTarget>1.8</jvmTarget>
+                    <compilerPlugins>
+                        <plugin>kotlinx-serialization</plugin>
+                    </compilerPlugins>
                 </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jetbrains.kotlin</groupId>
+                        <artifactId>kotlin-maven-serialization</artifactId>
+                        <version>${kotlin_version}</version>
+                    </dependency>
+                </dependencies>
                 <executions>
                     <execution>
                         <id>compile</id>
