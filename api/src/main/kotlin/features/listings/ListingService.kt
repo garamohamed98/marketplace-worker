@@ -1,11 +1,13 @@
 package com.garamohamed.features.listings
 
-class ListingService {
+class ListingService(
+    private val repository: ListingRepository
+) {
     fun publishListing(request: ListingRequest): ListingResponse{
-        val jobId = (1..1000).random()
+        val id = repository.save(request)
 
         return ListingResponse(
-            jobId = jobId,
+            jobId = id,
             status = "QUEUED"
         )
     }

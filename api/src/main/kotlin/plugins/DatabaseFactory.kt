@@ -1,9 +1,12 @@
 package com.garamohamed.plugins
 
+import com.garamohamed.features.listings.ListingsTable
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
 import io.ktor.server.application.ApplicationEnvironment
 import org.jetbrains.exposed.v1.jdbc.Database
+import org.jetbrains.exposed.v1.jdbc.SchemaUtils
+import org.jetbrains.exposed.v1.jdbc.transactions.transaction
 
 object DatabaseFactory{
     fun init(environment: ApplicationEnvironment) {
@@ -23,6 +26,11 @@ object DatabaseFactory{
         val dataSource = HikariDataSource(config)
 
         Database.connect(dataSource)
-        println("database connected")
+
+        transaction {
+            SchemaUtils.create(ListingsTable)
+        }
+
+        println("Database connected")
     }
 }
