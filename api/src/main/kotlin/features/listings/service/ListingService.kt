@@ -4,6 +4,8 @@ import com.garamohamed.features.listings.domain.Listing
 import com.garamohamed.features.listings.dto.ListingRequest
 import com.garamohamed.features.listings.dto.ListingStatusResponse
 import com.garamohamed.features.listings.mapper.toDomain
+import com.garamohamed.features.listings.messaging.PublishListingMessage
+import com.garamohamed.features.listings.messaging.RabbitPublisher
 import com.garamohamed.features.listings.repository.ListingRepository
 import com.garamohamed.features.listings.repository.RedisRepository
 import java.util.NoSuchElementException
@@ -33,6 +35,12 @@ class ListingService(
         redisRepository.saveStatus(
             id,
             "QUEUED"
+        )
+
+        RabbitPublisher.publish(
+            PublishListingMessage(
+                listingId = id
+            )
         )
 
         return ListingStatusResponse(

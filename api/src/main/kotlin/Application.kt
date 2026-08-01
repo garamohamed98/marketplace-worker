@@ -12,5 +12,6 @@ fun Application.module() {
     configureStatusPages()
     DatabaseFactory.init(environment)
     RedisFactory.init()
+    RabbitFactory.init()
     configureRouting()
 }
