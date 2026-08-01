@@ -1,9 +1,6 @@
 package com.garamohamed
 
-import com.garamohamed.plugins.configureRouting
-import com.garamohamed.plugins.configureSerialization
-import com.garamohamed.plugins.DatabaseFactory
-import com.garamohamed.plugins.configureStatusPages
+import com.garamohamed.plugins.*
 
 import io.ktor.http.*
 import io.ktor.server.application.*
