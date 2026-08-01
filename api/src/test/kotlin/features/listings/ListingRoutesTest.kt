@@ -9,7 +9,7 @@ import io.ktor.http.contentType
 import io.ktor.server.testing.testApplication
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.decodeFromString
-import com.garamohamed.features.listings.dto.ListingResponse
+import com.garamohamed.features.listings.dto.ListingStatusResponse
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue
@@ -27,7 +27,7 @@ class ListingRoutesTest {
 
         assertEquals(HttpStatusCode.OK, response.status)
 
-        val body = Json.decodeFromString<ListingResponse>(response.bodyAsText())
+        val body = Json.decodeFromString<ListingStatusResponse>(response.bodyAsText())
         assertEquals("QUEUED", body.status)
         assertTrue(body.jobId > 0)
     }
