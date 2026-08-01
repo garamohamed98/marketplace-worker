@@ -8,29 +8,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ServerTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/features/listings/service/ListingService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/features/listings/service/ListingService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/plugins/Routing.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/plugins/Routing.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/features/listings/service/ListingServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/features/listings/service/ListingServiceTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/ApplicationKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/ApplicationKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingRoutesKt$listingRoutes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingRoutesKt$listingRoutes$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingRoutesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/ListingRoutesKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/database/ListingsTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/database/ListingsTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/domain/Listing.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/domain/Listing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/dto/ListingRequest$$serializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/dto/ListingRequest$$serializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/dto/ListingRequest$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/dto/ListingRequest$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/dto/ListingRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/dto/ListingRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/dto/ListingResponse$$serializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/dto/ListingResponse$$serializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/dto/ListingResponse$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/dto/ListingResponse$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/dto/ListingResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/dto/ListingResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/mapper/ListingMapperKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/mapper/ListingMapperKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/repository/ListingRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/repository/ListingRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/repository/ListingRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/repository/ListingRepositoryImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/service/ListingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/features/listings/service/ListingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/DatabaseFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/DatabaseFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/RoutingKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/RoutingKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/SerializationKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/SerializationKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/StatusPagesKt$configureStatusPages$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/StatusPagesKt$configureStatusPages$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/StatusPagesKt$configureStatusPages$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/StatusPagesKt$configureStatusPages$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/StatusPagesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/garamohamed/plugins/StatusPagesKt.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +26,8 @@
         <option value="package-info" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>

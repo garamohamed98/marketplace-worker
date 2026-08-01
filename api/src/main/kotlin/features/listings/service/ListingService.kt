@@ -5,10 +5,13 @@ import com.garamohamed.features.listings.dto.ListingRequest
 import com.garamohamed.features.listings.dto.ListingResponse
 import com.garamohamed.features.listings.mapper.toDomain
 import com.garamohamed.features.listings.repository.ListingRepository
+import com.garamohamed.features.listings.repository.RedisRepository
 
 class ListingService(
-    private val repository: ListingRepository
+    private val repository: ListingRepository,
+    private val redisRepository: RedisRepository
 ) {
+
     fun publishListing(request: ListingRequest): ListingResponse {
 
         require(request.title.isNotBlank()) {
@@ -25,6 +28,11 @@ class ListingService(
 
         val listing: Listing = request.toDomain()
         val id = repository.save(listing)
+
+        redisRepository.saveStatus(
+            id,
+            "QUEUED"
+        )
 
         return ListingResponse(
             jobId = id,

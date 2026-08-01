@@ -2,6 +2,7 @@ package com.garamohamed.features.listings.service
 
 import com.garamohamed.features.listings.dto.ListingRequest
 import com.garamohamed.features.listings.repository.ListingRepository
+import com.garamohamed.features.listings.repository.RedisRepository
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.Test
@@ -10,8 +11,9 @@ import org.mockito.kotlin.whenever
 
 class ListingServiceTest {
     private val repository = mock<ListingRepository>()
+    private val redisRepository = mock<RedisRepository>()
 
-    private val service = ListingService(repository)
+    private val service = ListingService(repository,redisRepository)
 
     @Test
     fun `should publish listing successfully`(){

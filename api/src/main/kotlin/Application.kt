@@ -11,5 +11,6 @@ fun Application.module() {
     configureSerialization()
     configureStatusPages()
     DatabaseFactory.init(environment)
+    RedisFactory.init()
     configureRouting()
 }
