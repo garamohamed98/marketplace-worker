@@ -4,4 +4,5 @@ import com.garamohamed.features.listings.domain.Listing
 
 interface ListingRepository {
     fun save(listing: Listing): Int
+    fun getById(id:Int):Listing
 }

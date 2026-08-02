@@ -58,4 +58,8 @@ class ListingService(
             status = status
         )
     }
+
+    fun getListingById(id:Int):Listing{
+         return repository.getById(id)
+    }
 }

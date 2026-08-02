@@ -1,0 +1,19 @@
+# Maven / Kotlin build output
+target/
+*.class
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Tomcat runtime dir
+tomcat.8080/
+
+# Node mock app
+mock-market-place/
+node_modules/
+dist/
+
+# Secrets / misc
+.env
+*.log
