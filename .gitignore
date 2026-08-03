@@ -10,7 +10,6 @@ target/
 tomcat.8080/
 
 # Node mock app
-mock-market-place/
 node_modules/
 dist/
 
